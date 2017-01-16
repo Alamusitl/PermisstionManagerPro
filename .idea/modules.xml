@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PermissionManager/PermissionManager.iml" filepath="$PROJECT_DIR$/PermissionManager/PermissionManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PermissionManagerLibrary/PermissionManagerLibrary.iml" filepath="$PROJECT_DIR$/PermissionManagerLibrary/PermissionManagerLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PermissionManagerPro.iml" filepath="$PROJECT_DIR$/PermissionManagerPro.iml" />
+    </modules>
+  </component>
+</project>

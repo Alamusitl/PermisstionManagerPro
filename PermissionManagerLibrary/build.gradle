@@ -1,0 +1,44 @@
+import proguard.gradle.ProGuardTask
+
+apply plugin: 'com.android.library'
+
+def androidVersionCode = 3
+def androidVersionName = "1.2"
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode androidVersionCode
+        versionName androidVersionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+task makeUnProguardPermissionJar(type: Jar, dependsOn: build) {
+    delete 'build/libs/permission-manager-unProguard.jar'
+    baseName 'permission-manager-unProguard'
+    from('build/intermediates/classes/release')
+    exclude('android/')
+    exclude('com/afk/permission/BuildConfig.class', 'com/afk/permission/R.class',)
+    exclude('com/afk/permission/R$attr.class', 'com/afk/permission/R$string.class')
+}
+
+task makeReleasePermissionJar(type: ProGuardTask, dependsOn: makeUnProguardPermissionJar) {
+    delete 'build/libs/permission-manager-release-' + androidVersionName + '.jar'
+    injars 'build/libs/permission-manager-unProguard.jar'
+    outjars 'build/libs/permission-manager-release-' + androidVersionName + '.jar'
+    configuration 'proguard-rules.pro'
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:25.0.0'
+}
