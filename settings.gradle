@@ -1,1 +1,1 @@
-include ':PermissionManager', ':PermissionManagerLibrary'
+include ':PermissionManagerSample', ':PermissionManagerLibrary'
