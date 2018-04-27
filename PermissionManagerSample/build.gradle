@@ -4,13 +4,13 @@ def androidVersionCode = 1
 def androidVersionName = "1.0"
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.afk.demo.permission"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode androidVersionCode
         versionName androidVersionName
     }
@@ -23,6 +23,6 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:25.0.0'
-    compile files('libs/permission-manager-release-1.2.jar')
+    implementation 'com.android.support:support-v4:27.0.0'
+    implementation project(':PermissionManagerLibrary')
 }

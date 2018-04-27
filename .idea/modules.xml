@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PermissionManagerLibrary/PermissionManagerLibrary.iml" filepath="$PROJECT_DIR$/PermissionManagerLibrary/PermissionManagerLibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PermissionManagerPro.iml" filepath="$PROJECT_DIR$/PermissionManagerPro.iml" />
       <module fileurl="file://$PROJECT_DIR$/PermissionManagerSample/PermissionManagerSample.iml" filepath="$PROJECT_DIR$/PermissionManagerSample/PermissionManagerSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PermisstionManagerPro.iml" filepath="$PROJECT_DIR$/.idea/PermisstionManagerPro.iml" />
     </modules>
   </component>
 </project>
