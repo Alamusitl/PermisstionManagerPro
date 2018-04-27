@@ -1,4 +1,4 @@
-package com.afk.permission;
+package com.iowl.permission;
 
 /**
  * Permission Bean

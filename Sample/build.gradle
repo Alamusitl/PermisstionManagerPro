@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+def androidVersionCode = 1
+def androidVersionName = "1.0"
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.iowl.permission.demo"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode androidVersionCode
+        versionName androidVersionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.0.0'
+    implementation project(':Library')
+}

@@ -1,14 +1,13 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
-def androidVersionCode = 1
-def androidVersionName = "1.0"
+def androidVersionCode = 3
+def androidVersionName = "1.2"
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.afk.demo.permission"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode androidVersionCode
@@ -24,5 +23,4 @@ android {
 
 dependencies {
     implementation 'com.android.support:support-v4:27.0.0'
-    implementation project(':PermissionManagerLibrary')
 }

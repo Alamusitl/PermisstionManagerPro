@@ -1,4 +1,4 @@
-package com.afk.demo.permission;
+package com.iowl.permission.demo;
 
 import android.Manifest;
 import android.app.Activity;
@@ -9,9 +9,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.afk.permission.Permission;
-import com.afk.permission.PermissionCallBack;
-import com.afk.permission.PermissionManager;
+import com.afk.demo.permission.R;
+import com.iowl.permission.Permission;
+import com.iowl.permission.PermissionCallBack;
+import com.iowl.permission.PermissionManager;
 
 public class MainActivity extends Activity {
 
